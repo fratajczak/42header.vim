@@ -153,8 +153,3 @@ endfunction
 
 " Remove stdheader plugin autocmd
 autocmd! BufWritePre *
-
-augroup fortytwoheader
-  autocmd!
-  autocmd BufWritePre * call s:update ()
-augroup END

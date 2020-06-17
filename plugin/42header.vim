@@ -169,9 +169,6 @@ function s:update()
   call s:delimiters()
   if getline(9) =~ s:start . repeat(' ', s:framelen - strlen(s:start)) .
         \'Updated: '
-    if &mod
-      call setline(9, s:line(9))
-    endif
     call setline(4, s:line(4))
     return 0
   endif
